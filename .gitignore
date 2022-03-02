@@ -1,0 +1,46 @@
+# direnv configuration file
+.envrc
+
+# IntelliJ Idea
+.idea
+.idea_modules
+*.iml
+out/
+.attach_pid*
+
+# vscode
+.vscode
+.metals
+project/metals.sbt
+project/.bloop
+project/projec
+.bloop
+.ivy
+.sbt
+
+# sbt's target directories
+*/target/
+*/project/target/
+*/project/project/target/
+*/project/project/project/target/
+*/test/macro-annot/target/
+*/test/files/target/
+*/test/target/
+*/build-sbt/
+local.sbt
+jitwatch.out
+
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+.history
+.cache
+.lib/
+.bsp/
+.idea/
+
+.scalafix.conf
+.scalafmt.conf
