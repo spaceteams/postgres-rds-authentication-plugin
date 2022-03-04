@@ -19,6 +19,7 @@ ThisBuild / developers := List(
   )
 )
 
+ThisProject / name := "postgres-rds-authentication-plugin"
 ThisBuild / description := "RDS authentication plugin for PostreSQL JDBC driver."
 ThisBuild / licenses := List("BSD 3-Clause License" -> new URL("https://opensource.org/licenses/BSD-3-Clause"))
 ThisBuild / homepage := Some(url("https://github.com/spaceteams/postgres-rds-authentication-plugin"))
@@ -43,7 +44,4 @@ val `postgres-rds-authentication-plugin` = project
       "org.scalatest" %% "scalatest"                       % "3.2.11"   % Test,
       "com.dimafeng"  %% "testcontainers-scala-postgresql" % "0.40.1"   % Test
     ),
-    artifactName := { (_: ScalaVersion, module: ModuleID, artifact: Artifact) =>
-      artifact.name + "-" + module.revision + "." + artifact.extension
-    }
   )
